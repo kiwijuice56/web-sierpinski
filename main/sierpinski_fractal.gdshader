@@ -80,6 +80,7 @@ void rotate(inout vec3 p) {
 	p.z = sin(t) * pt.x + cos(t) * pt.z;
 }
 
+//http://blog.hvidtfeldts.net/index.php/2011/08/distance-estimated-3d-fractals-iii-folding-space/
 float tetrahedron_de(vec3 p) {
 	if (mirror) {
 		p = mod(p, universe_size) - vec3(universe_size / 2.0);
